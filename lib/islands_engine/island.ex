@@ -133,7 +133,7 @@ defmodule IslandEngine.Island do
     end
   end
 
-  def forested?(island), do: MapSet.equal?(island.coordinates, island.hits_coordinates)
+  def forested?(island), do: MapSet.equal?(island.coordinates, island.hit_coordinates)
 
   defp offsets(:square), do: [{0, 0}, {0, 1}, {1, 0}, {1, 1}]
 
